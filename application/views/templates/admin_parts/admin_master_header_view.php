@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>iCheck/square/blue.css">
     <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>dist/css/skins/skin-black-light.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -47,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body class="hold-transition skin-black-light sidebar-mini">
 <div class="wrapper">
-
+<!-- <?php if ($this->ion_auth->logged_in()): ?> -->
     <header class="main-header">
         <!-- Logo -->
         <a href="<?php echo base_url('admin/dashboard')?>" class="logo">
@@ -299,7 +301,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="javascript:void(0);" class="btn btn-default btn-flat" onclick="logout();">Sign out</a>
                                 </div>
                             </li>
                         </ul>
@@ -308,5 +310,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </nav>
     </header>
+<!-- <?php endif ?> -->
     <!-- Left side column. contains the logo and sidebar -->
 

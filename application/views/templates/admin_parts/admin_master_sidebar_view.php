@@ -1,6 +1,6 @@
 <?php
-//if($this->ion_auth->logged_in()) {
-//?>
+if($this->ion_auth->logged_in()) {
+?>
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
@@ -68,12 +68,24 @@
                         <i class="fa fa-book"></i> <span>Documentation</span>
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo base_url('admin/user/change_password') ?>">
+                        <i class="fa fa-refresh" aria-hidden="true"></i> <span>Đổi Mật Khẩu</span>
+                    </a>
+                </li>
+                <?php if ($this->ion_auth->is_admin()===TRUE): ?>
+                    <li>
+                        <a href="<?php echo base_url('admin/user/register') ?>">
+                            <i class="fa fa-registered" aria-hidden="true"></i> <span>Tạo tài khoản</span>
+                        </a>
+                    </li>
+                <?php endif ?>
 
             </ul>
         </section>
         <!-- /.sidebar -->
     </aside>
-<?php //} ?>
+<?php } ?>
 
 
 
