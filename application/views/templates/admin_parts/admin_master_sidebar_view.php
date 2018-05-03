@@ -53,6 +53,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="<?php echo base_url('admin/product_category') ?>">
+                        <i class="fa fa-inbox"></i> <span>Danh Mục Sản Phẩm</span>
+                    </a>
+                </li>
+                <li>
                     <a href="<?php echo base_url('admin/post') ?>">
                         <i class="fa fa-envelope-o"></i> <span>Bài Viết</span>
                     </a>
