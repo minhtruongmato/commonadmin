@@ -1,0 +1,43 @@
+/*
+RESET FORMS STYLE OF ADMINLTE
+ */
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0; }
+  .form-horizontal .form-group .check_available {
+    padding: 15px;
+    background-color: #db8b0b;
+    color: #fff; }
+  .form-horizontal .form-group .check_show {
+    padding: 15px;
+    background-color: #d2d6de;
+    color: #333; }
+
+.nav_side_fix {
+  position: fixed;
+  top: 15px;
+  right: 0px; }
+  .nav_side_fix .box {
+    width: 85%;
+    margin-left: 15%; }
+
+.image-preview .item .mask {
+  width: 250px;
+  height: 100px;
+  overflow: hidden;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #4e4e4e;
+  position: relative; }
+  .image-preview .item .mask img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .image-preview .item .mask span.close-preview {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+    .image-preview .item .mask span.close-preview:hover {
+      cursor: pointer; }
+
+/*# sourceMappingURL=forms.css.map */

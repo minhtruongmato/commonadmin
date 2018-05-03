@@ -1,0 +1,38 @@
+table tr td img {
+  width: 250px; }
+table tr td a#dataActionEdit {
+  color: #357ca5; }
+  table tr td a#dataActionEdit:hover {
+    color: #3c8dbc; }
+table tr td a#dataActionDelete {
+  color: #d33724; }
+  table tr td a#dataActionDelete:hover {
+    color: #f56954; }
+table tr td .mask_lg {
+  width: 250px;
+  height: 150px;
+  overflow: hidden; }
+  table tr td .mask_lg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+table tr td .mask_sm {
+  width: 130px;
+  height: 130px;
+  overflow: hidden; }
+  table tr td .mask_sm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+table tr td p {
+  max-width: 250px; }
+table.table_product .mask {
+  width: 150px;
+  height: 150px;
+  overflow: hidden; }
+  table.table_product .mask img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+/*# sourceMappingURL=datatable.css.map */
