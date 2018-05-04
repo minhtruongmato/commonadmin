@@ -6,11 +6,11 @@
             <small>
                 <?php 
                     switch ($controller) {
-                        case 'post_category':
+                        case 'product_category':
                             echo "Danh Mục";
                             break;
-                        case 'post':
-                            echo "Bài Viết";
+                        case 'product':
+                            echo "Sản Phẩm";
                             break;
                         default:
                             # code...
@@ -39,7 +39,7 @@
                         <div class="form-group col-xs-12">
                             <label for="image_shared">Hình ảnh đang dùng</label>
                             <br>
-                            <img src="<?php echo base_url('assets/public/upload/'. $controller .'/'.'image'); ?>" width=250px>
+                            <img src="<?php echo base_url('assets/upload/'. $controller .'/'. $detail['image']); ?>" width=250px>
                             <br>
                         </div>
                         <div class="form-group col-xs-12">
@@ -55,7 +55,7 @@
                                 <?php
                                 echo form_label('Slug', 'slug_shared');
                                 echo form_error('slug_shared');
-                                echo form_input('slug_shared', 'slug', 'class="form-control" id="slug_shared" readonly');
+                                echo form_input('slug_shared', $detail['slug'], 'class="form-control" id="slug_shared" readonly');
                                 ?>
                             </div>
                         </div>
@@ -65,11 +65,11 @@
                                 <?php
                                 echo form_label('Danh mục', 'parent_id_shared');
                                 echo form_error('parent_id_shared');
-                                if($controller == 'post_category'){
-                                    echo form_dropdown('parent_id_shared', 'category', 'parent_id', 'class="form-control"');
+                                if($controller == 'product_category'){
+                                    echo form_dropdown('parent_id_shared', $category, $detail['parent_id'], 'class="form-control"');
                                 }
-                                if($controller == 'post'){
-                                    echo form_dropdown('parent_id_shared', 'category', 'post_category_id', 'class="form-control"');
+                                if($controller == 'product'){
+                                    echo form_dropdown('parent_id_shared', $category, $detail['product_category_id'], 'class="form-control"');
                                 }
                                 
                                 ?>
@@ -100,15 +100,15 @@
                                                     if($k == 'title' && in_array($k, $request_language_template)){
                                                         echo form_label($val, $k .'_'. $key);
                                                         echo form_error($k .'_'. $key);
-                                                        echo form_input($k .'_'. $key, 'title_'. $key, 'class="form-control" id="title_'.$key.'"');
+                                                        echo form_input($k .'_'. $key, trim($detail['title_'. $key]), 'class="form-control" id="title_'.$key.'"');
                                                     }elseif($k == 'description' && in_array($k, $request_language_template)){
                                                         echo form_label($val, $k .'_'. $key);
                                                         echo form_error($k .'_'. $key);
-                                                        echo form_textarea($k .'_'. $key, 'description_'. $key, 'class="form-control" rows="5"');
+                                                        echo form_textarea($k .'_'. $key,  trim($detail['description_'. $key]), 'class="form-control" rows="5"');
                                                     }elseif($k == 'content' && in_array($k, $request_language_template)){
                                                         echo form_label($val, $k .'_'. $key);
                                                         echo form_error($k .'_'. $key);
-                                                        echo form_textarea($k .'_'. $key, 'content_'. $key, 'class="tinymce-area form-control" rows="5"');
+                                                        echo form_textarea($k .'_'. $key,  trim($detail['content_'. $key]), 'class="tinymce-area form-control" rows="5"');
                                                     }
                                                 ?>
                                             </div>
@@ -126,6 +126,6 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/script.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/common.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/script.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/common.js') ?>"></script>
 

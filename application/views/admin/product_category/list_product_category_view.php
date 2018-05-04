@@ -8,10 +8,10 @@
             <small>
                 <?php 
                     switch ($controller) {
-                        case 'post_category':
+                        case 'product_category':
                             echo "Danh Mục";
                             break;
-                        case 'post':
+                        case 'product':
                             echo "Bài Viết";
                             break;
                         default:
@@ -47,10 +47,10 @@
                         <h3 class="box-title">
                             <?php 
                                 switch ($controller) {
-                                    case 'post_category':
+                                    case 'product_category':
                                         echo "Danh Mục";
                                         break;
-                                    case 'post':
+                                    case 'product':
                                         echo "Bài Viết";
                                         break;
                                     default:
@@ -102,7 +102,7 @@
                                         <td><?php echo $i++ ?></td>
                                         <td>
                                             <div class="mask_sm">
-                                                <img src="<?php echo base_url('assets/public/upload/'.$controller.'/'. $value['image']) ?>" alt="anh-cua-<?php echo $value['slug'] ?>" width=150px>
+                                                <img src="<?php echo base_url('assets/upload/'.$controller.'/'.$value['slug'].'/' .$value['image']) ?>" alt="anh-cua-<?php echo $value['slug'] ?>" width=150px>
                                             </div>
                                         </td>
                                         <td><?php echo $value['title'] ?></td>
@@ -113,7 +113,7 @@
                                         </td>
                                         <td>
                                             <a href="<?php echo base_url('admin/'.$controller.'/edit/'. $value['id']) ?>" class="dataActionEdit"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
-                                            <a href="javascript:void(0);" onclick="remove('event', <?php echo $value['id'] ?>)" class="dataActionDelete"><i class="fa fa-remove" aria-hidden="true"></i> </a>
+                                            <a href="<?php echo base_url('admin/'.$controller.'/remove/'.$value['id']); ?>" class="dataActionDelete"><i class="fa fa-remove" aria-hidden="true"></i> </a>
                                         </td>
 
                                     </tr>

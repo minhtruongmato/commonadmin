@@ -115,9 +115,43 @@ defined('MESSAGE_CREATE_ERROR') OR define('MESSAGE_CREATE_ERROR', 'Thêm mới t
  */
 defined('MESSAGE_PHOTOS_ERROR') OR define('MESSAGE_PHOTOS_ERROR', 'Hình ảnh vượt quá %u Kb. Vui lòng kiểm tra lại và thực hiện lại thao tác!');
 
+/**
+ * Message Pfile extension
+ */
+defined('MESSAGE_FILE_EXTENSION_ERROR') OR define('MESSAGE_FILE_EXTENSION_ERROR', 'Đuôi file image phải là jpg | jpeg | png | gif!');
+
 /*=====  End of Message for Create  ======*/
+/*==============================
+=            Message for remove            =
+==============================*/
+
+/**
+ * Message Success code
+ */
+defined('MESSAGE_REMOVE_SUCCESS') OR define('MESSAGE_REMOVE_SUCCESS', 'Xóa thành công!');
+
+/**
+ * Message error code
+ */
+defined('MESSAGE_REMOVE_ERROR') OR define('MESSAGE_REMOVE_ERROR', 'Xóa thất bại!');
+
+/**
+ * Message foreign key link check product category and check product
+ */
+defined('MESSAGE_FOREIGN_KEY_LINK_ERROR') OR define('MESSAGE_FOREIGN_KEY_LINK_ERROR', 'Category vẫn còn %s bài viết và có %s category là con nên không thẻ xóa!');
 
 
+/**
+ * Message check id product category 
+ */
+defined('MESSAGE_ID_ERROR') OR define('MESSAGE_ID_ERROR', 'ID phải là số và lớn hơn 0');
+
+/**
+ * Message Pfile extension
+ */
+defined('MESSAGE_FILE_EXTENSION_ERROR') OR define('MESSAGE_FILE_EXTENSION_ERROR', 'Đuôi file image phải là jpg | jpeg | png | gif!');
+
+/*=====  End of Message for remove  ======*/
 
 /*==============================
 =            Message for Edit            =
@@ -126,11 +160,17 @@ defined('MESSAGE_PHOTOS_ERROR') OR define('MESSAGE_PHOTOS_ERROR', 'Hình ảnh v
 /**
  * Message Success code
  */
-defined('MESSAGE_EDIT_SUCCESS') OR define('MESSAGE_EDIT_SUCCESS', 'Thêm mới thành công!');
+defined('MESSAGE_EDIT_SUCCESS') OR define('MESSAGE_EDIT_SUCCESS', 'Sửa thành công!');
+
 
 /**
  * Message Success code
  */
-defined('MESSAGE_EDIT_ERROR') OR define('MESSAGE_EDIT_ERROR', 'Thêm mới thất bại!');
+defined('MESSAGE_ISSET_ERROR') OR define('MESSAGE_ISSET_ERROR', 'ID không tồn tại!');
+
+/**
+ * Message Success code
+ */
+defined('MESSAGE_EDIT_ERROR') OR define('MESSAGE_EDIT_ERROR', 'Sửa thất bại!');
 
 /*=====  End of Message for Create  ======*/

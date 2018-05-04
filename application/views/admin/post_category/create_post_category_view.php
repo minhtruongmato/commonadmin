@@ -113,6 +113,6 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/script.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/common.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/script.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/common.js') ?>"></script>
 

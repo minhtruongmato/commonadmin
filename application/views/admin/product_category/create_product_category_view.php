@@ -6,11 +6,11 @@
             <small>
                 <?php 
                     switch ($controller) {
-                        case 'post_category':
+                        case 'product_category':
                             echo "Danh Mục";
                             break;
-                        case 'post':
-                            echo "Bài Viết";
+                        case 'product':
+                            echo "Sản Phẩm";
                             break;
                         default:
                             # code...
@@ -25,6 +25,13 @@
     <section class="content">
         <div class="row">
             <div class="col-xs-12">
+                <?php if ($this->session->flashdata('message_error')): ?>
+                    <div class="alert alert-warning alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                        <?php echo $this->session->flashdata('message_error'); ?>
+                    </div>
+                <?php endif ?>
                 <div class="box box-default">
                     <div class="box-body">
                         <?php
@@ -59,7 +66,7 @@
                                 <?php
                                 echo form_label('Danh mục', 'parent_id_shared');
                                 echo form_error('parent_id_shared');
-                                echo form_dropdown('parent_id_shared', 'DSCategory', 0, 'class="form-control"');
+                                echo form_dropdown('parent_id_shared', $product_category, 0, 'class="form-control"');
                                 ?>
                             </div>
                         </div>
@@ -113,6 +120,6 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/script.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/common.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/script.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/common.js') ?>"></script>
 
