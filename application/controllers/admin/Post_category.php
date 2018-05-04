@@ -99,6 +99,9 @@ class Post_category extends Admin_Controller{
                     $insert = $this->post_category_model->common_insert($shared_request);
                     if($insert){
                         $requests = handle_multi_language_request('post_category_id', $insert, $this->request_language_template, $this->input->post(), $this->page_languages);
+                        echo '<pre>';
+                        print_r($requests);
+                        echo '</pre>';die;
                         $this->post_category_model->insert_with_language($requests);
                     }
 

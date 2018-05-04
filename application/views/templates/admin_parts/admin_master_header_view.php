@@ -11,16 +11,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>fontAwesome/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>ionicons/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>dist/css/skins/skin-black-light.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>dist/css/skins/skin-black-light.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,9 +35,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!-- Library JS called-->
     <!-- jQuery 3 -->
-    <script src="<?php echo site_url('assets/public/lib/') ?>jquery/jquery.min.js"></script>
+    <script src="<?php echo site_url('assets/lib/') ?>jquery/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="<?php echo site_url('assets/public/lib/') ?>bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo site_url('assets/lib/') ?>bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="<?php echo site_url('') ?>tinymce/tinymce.min.js"></script>
 
@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li><!-- start message -->
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="<?php echo site_url('assets/public/lib/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
+                                                <img src="<?php echo site_url('assets/lib/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Support Team
@@ -92,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="<?php echo site_url('assets/public/lib/dist/img/user3-128x128.jpg') ?>" class="img-circle" alt="User Image">
+                                                <img src="<?php echo site_url('assets/lib/dist/img/user3-128x128.jpg') ?>" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 AdminLTE Design Team
@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="<?php echo site_url('assets/public/lib/dist/img/user4-128x128.jpg') ?>" class="img-circle" alt="User Image">
+                                                <img src="<?php echo site_url('assets/lib/dist/img/user4-128x128.jpg') ?>" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Developers
@@ -116,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="<?php echo site_url('assets/public/lib/dist/img/user3-128x128.jpg') ?>" class="img-circle" alt="User Image">
+                                                <img src="<?php echo site_url('assets/lib/dist/img/user3-128x128.jpg') ?>" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Sales Department
@@ -128,7 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="<?php echo site_url('assets/public/lib/dist/img/user4-128x128.jpg') ?>" class="img-circle" alt="User Image">
+                                                <img src="<?php echo site_url('assets/lib/dist/img/user4-128x128.jpg') ?>" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Reviewers
@@ -265,13 +265,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="<?php echo site_url('assets/public/lib/dist/img/user2-160x160.jpg') ?>" class="user-image" alt="User Image">
+                            <img src="<?php echo site_url('assets/lib/dist/img/user2-160x160.jpg') ?>" class="user-image" alt="User Image">
                             <span class="hidden-xs">Alexander Pierce</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="<?php echo site_url('assets/public/lib/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
+                                <img src="<?php echo site_url('assets/lib/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
 
                                 <p>
                                     Alexander Pierce - Web Developer

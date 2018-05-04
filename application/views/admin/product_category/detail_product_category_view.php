@@ -9,11 +9,11 @@
             <small>
                 <?php 
                     switch ($controller) {
-                        case 'post_category':
+                        case 'product_category':
                             echo "Danh Mục";
                             break;
-                        case 'post':
-                            echo "Bài Viết";
+                        case 'product':
+                            echo "Sản Phẩm";
                             break;
                         default:
                             # code...
@@ -28,11 +28,11 @@
             <li class="active">
                 <?php 
                     switch ($controller) {
-                        case 'post_category':
+                        case 'product_category':
                             echo "Danh Mục";
                             break;
-                        case 'post':
-                            echo "Bài Viết";
+                        case 'product':
+                            echo "Sản Phẩm";
                             break;
                         default:
                             # code...
@@ -60,7 +60,7 @@
                                 <div class="row">
                                     <div class="item col-md-12">
                                         <div class="mask-lg">
-                                            <img src="<?php echo base_url('assets/public/upload/'.$controller.'/'.'image' ) ?>" alt="Image Detail" width=300px>
+                                            <img src="<?php echo base_url('assets/upload/'.$controller.'/'.$detail['slug'].'/' .$detail['image']) ?>" alt="anh-cua-<?php echo $detail['slug'] ?>" width="300px" > 
                                         </div>
                                     </div>
                                 </div>
@@ -74,11 +74,11 @@
                                         </tr>
                                         <tr>
                                             <th>Slug</th>
-                                            <td><?php echo 'slug' ?></td>
+                                            <td><?php echo $detail['slug'] ?></td>
                                         </tr>
                                         <tr>
                                             <th>Danh Mục</th>
-                                            <td><?php echo 'parent_title' ?></td>
+                                            <td><?php echo $detail['parent_title'] ?></td>
                                         </tr>
 
                                     </table>
@@ -111,17 +111,17 @@
                                                             <?php if ($k == 'title' && in_array($k, $request_language_template)): ?>
                                                                 <tr>
                                                                     <th style="width: 100px">Tiêu đề: </th>
-                                                                    <td><?php echo 'title_'. $key ?></td>
+                                                                    <td><?php echo $detail['title_'. $key] ?></td>
                                                                 </tr>
                                                             <?php elseif($k == 'description' && in_array($k, $request_language_template)): ?>
                                                                 <tr>
                                                                     <th style="width: 100px">Giới thiệu: </th>
-                                                                    <td><?php echo 'description_'. $key ?></td>
+                                                                    <td><?php echo $detail['description_'. $key] ?></td>
                                                                 </tr>
                                                             <?php elseif($k == 'content' && in_array($k, $request_language_template)): ?>
                                                                 <tr>
                                                                     <th style="width: 100px">Nội dung: </th>
-                                                                    <td><?php echo 'content_'. $key ?></td>
+                                                                    <td><?php echo $detail['content_'. $key] ?></td>
                                                                 </tr>
                                                             <?php endif ?>
                                                         </tbody>
@@ -169,11 +169,11 @@
                         <h3 class="box-title">Chỉnh sửa 
                             <?php 
                                 switch ($controller) {
-                                    case 'post_category':
+                                    case 'product_category':
                                         echo "Danh Mục";
                                         break;
-                                    case 'post':
-                                        echo "Bài Viết";
+                                    case 'product':
+                                        echo "Sản Phẩm";
                                         break;
                                     default:
                                         # code...
@@ -183,7 +183,7 @@
                          này?</h3>
                     </div>
                     <div class="box-body">
-                        <a href="<?php echo base_url('admin/'.$controller.'/edit/'.'id') ?>" class="btn btn-warning" role="button">Chỉnh sửa</a>
+                        <a href="<?php echo base_url('admin/'.$controller.'/edit/'.$detail['id']) ?>" class="btn btn-warning" role="button">Chỉnh sửa</a>
                     </div>
                 </div>
             </div>

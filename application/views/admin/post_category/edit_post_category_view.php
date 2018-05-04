@@ -39,7 +39,7 @@
                         <div class="form-group col-xs-12">
                             <label for="image_shared">Hình ảnh đang dùng</label>
                             <br>
-                            <img src="<?php echo base_url('assets/public/upload/'. $controller .'/'. $detail['image']); ?>" width=250px>
+                            <img src="<?php echo base_url('assets/upload/'. $controller .'/'. $detail['image']); ?>" width=250px>
                             <br>
                         </div>
                         <div class="form-group col-xs-12">
@@ -126,6 +126,6 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/script.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/public/js/admin/common.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/script.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/admin/common.js') ?>"></script>
 

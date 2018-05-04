@@ -7,7 +7,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="<?php echo site_url('assets/public/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
+                    <img src="<?php echo site_url('assets/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>Alexander Pierce</p>
@@ -60,6 +60,11 @@
                 <li>
                     <a href="<?php echo base_url('admin/post') ?>">
                         <i class="fa fa-envelope-o"></i> <span>Bài Viết</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo base_url('admin/product') ?>">
+                        <i class="fa fa-envelope-o"></i> <span>Sản Phẩm</span>
                     </a>
                 </li>
                 <li>

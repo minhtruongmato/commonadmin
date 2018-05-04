@@ -37,7 +37,9 @@ class MY_Model extends CI_Model {
         $this->db->select($this->table .'.*, '. $this->table_lang .'.title');
         $this->db->from($this->table);
         $this->db->join($this->table_lang, $this->table_lang .'.'. $this->table .'_id = '. $this->table .'.id');
-        $this->db->like($this->table_lang .'.title', $keywords);
+        if($keywords != ''){
+            $this->db->like($this->table_lang .'.title', $keywords);
+        }
         $this->db->where($this->table .'.is_deleted', 0);
         if($lang != ''){
             $this->db->where($this->table_lang .'.language', $lang);
@@ -53,7 +55,9 @@ class MY_Model extends CI_Model {
         $this->db->select('*');
         $this->db->from($this->table);
         $this->db->join($this->table_lang, $this->table_lang .'.'. $this->table .'_id = '. $this->table .'.id');
-        $this->db->like($this->table_lang .'.title', $keyword);
+        if($keyword != ''){
+            $this->db->like($this->table_lang .'.title', $keyword);
+        }
         if($lang != ''){
             $this->db->where($this->table_lang .'.language', $lang);
         }
@@ -89,7 +93,7 @@ class MY_Model extends CI_Model {
         $this->db->where($this->table .'.is_deleted', 0);
         $this->db->where($this->table .'.id', $id);
         $this->db->limit(1);
-
+        
         return $this->db->get()->row_array();
     }
 
@@ -124,5 +128,9 @@ class MY_Model extends CI_Model {
             $temp_slug = $slug . '-' . (++$count);
         }
         return $temp_slug;
+    }
+    public function findcolumn($data=array()){
+        $this->db->where($data);
+        return $this->db->count_all_results($this->table);
     }
 }

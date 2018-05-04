@@ -10,8 +10,8 @@
 </body>
 
 <!-- fastClick -->
-<script src="<?php echo site_url('assets/public/lib/') ?>fastclick/fastclick.js"></script>
+<script src="<?php echo site_url('assets/lib/') ?>fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo site_url('assets/public/lib/') ?>dist/js/adminlte.min.js"></script>
+<script src="<?php echo site_url('assets/lib/') ?>dist/js/adminlte.min.js"></script>
 
 </html>
