@@ -109,7 +109,6 @@ class Product extends Admin_Controller{
 
         $this->data['detail'] = $detail;
         
-        
 
         $this->render('admin/product_category/detail_product_category_view');
     }
