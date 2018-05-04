@@ -7,15 +7,15 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>fontAwesome/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>ionicons/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>dist/css/AdminLTE.min.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/public/lib/') ?>iCheck/square/blue.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>iCheck/square/blue.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,11 +69,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="<?php echo site_url('assets/public/lib/') ?>jquery/jquery.min.js"></script>
+<script src="<?php echo site_url('assets/lib/') ?>jquery/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="<?php echo site_url('assets/public/lib/') ?>bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo site_url('assets/lib/') ?>bootstrap/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="<?php echo site_url('assets/public/lib/') ?>iCheck/js/icheck.min.js"></script>
+<script src="<?php echo site_url('assets/lib/') ?>iCheck/js/icheck.min.js"></script>
 <script>
     $(function () {
         $('input').iCheck({
