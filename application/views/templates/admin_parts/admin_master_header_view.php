@@ -20,6 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>iCheck/square/blue.css">
     <link rel="stylesheet" href="<?php echo site_url('assets/lib/') ?>dist/css/skins/skin-black-light.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
