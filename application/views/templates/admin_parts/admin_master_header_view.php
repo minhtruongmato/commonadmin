@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body class="hold-transition skin-black-light sidebar-mini">
 <div class="wrapper">
-
+<!-- <?php if ($this->ion_auth->logged_in()): ?> -->
     <header class="main-header">
         <!-- Logo -->
         <a href="<?php echo base_url('admin/dashboard')?>" class="logo">
@@ -300,7 +301,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="javascript:void(0);" class="btn btn-default btn-flat" onclick="logout();">Sign out</a>
                                 </div>
                             </li>
                         </ul>
@@ -309,5 +310,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </nav>
     </header>
+<!-- <?php endif ?> -->
     <!-- Left side column. contains the logo and sidebar -->
 
